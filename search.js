@@ -1,9 +1,16 @@
 function searchCountry(param) {
   const searchInputElement = document.querySelector(".search");
-  searchInputElement.addEventListener("input", (event) => {
-    const inputValue = event.target.value.toLowerCase();
-    const filteredCountries = param.filter((value) =>
-      value.country.toLowerCase().includes(inputValue)
+  const searchButton = document.querySelector(".get-country");
+
+  searchButton.addEventListener("click", () => {
+    const inputValue = searchInputElement.value.toLowerCase();
+    if (inputValue === "") return;
+    const filteredCountries = param.filter(
+      (value) =>
+        value.country.toLowerCase().includes(inputValue) ||
+        value.currency.toLowerCase().includes(inputValue) ||
+        value.capital.toLowerCase().includes(inputValue) ||
+        value.language.toLowerCase().includes(inputValue)
     );
     htmlGen(filteredCountries);
   });

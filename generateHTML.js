@@ -1,5 +1,4 @@
 function htmlGen(param) {
-  console.log(param);
   let html = "";
   for (let value of param) {
     html += `

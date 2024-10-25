@@ -1,6 +1,7 @@
+const button = document.querySelector(".get-country");
+
 async function main() {
   const api = await getApi();
-  htmlGen(api);
   searchCountry(api);
 }
 
