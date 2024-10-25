@@ -1,6 +1,6 @@
 async function main(param) {
   const api = await getApi();
-  console.log(api);
+  return api;
 }
 
 main();
