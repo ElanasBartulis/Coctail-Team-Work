@@ -1,20 +1,23 @@
 function htmlGen(param) {
+  console.log(param);
   let html = "";
-  html += `
-        <div class="flag">
-            <img src="https://flagcdn.com/gs.svg" alt="Salies Veleva">
-        </div>
-        <div class="country-info">
-            <ul>
-                <li>Country: {England}</li>
-                <li>Population: {11213214}</li>
-                <li>Currency: {777$}</li>
-                <li>Capital: {London}</li>
-                <li>Time: {20:00}</li>
-                <li>Language: {ENGLISH}</li>
-            </ul>
-        </div>
-    `;
+  for (let value of param) {
+    html += `
+          <div class="flag">
+              <img src=${value.flagImg} alt="Salies Veleva">
+          </div>
+          <div class="country-info">
+              <ul>
+                  <li>Country: ${value.name}</li>
+                  <li>Population: ${value.population}</li>
+                  <li>Currency: ${value.currency}</li>
+                  <li>Capital: ${value.capital}</li>
+                  <li>Time: ${value.time}</li>
+                  <li>Language: ${value.language}</li>
+              </ul>
+          </div>
+      `;
+  }
 
   const mainContentElement = document.querySelector(".main-content");
   mainContentElement.innerHTML = html;

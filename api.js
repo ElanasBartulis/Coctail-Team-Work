@@ -21,5 +21,5 @@ async function getApi() {
     };
   });
 
-  console.log(newObject);
+  return newObject;
 }
