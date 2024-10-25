@@ -8,7 +8,7 @@ function htmlGen(param) {
           </div>
           <div class="country-info">
               <ul>
-                  <li>Country: ${value.name}</li>
+                  <li>Country: ${value.country}</li>
                   <li>Population: ${value.population}</li>
                   <li>Currency: ${value.currency}</li>
                   <li>Capital: ${value.capital}</li>

@@ -4,7 +4,7 @@ async function getApi() {
 
   const newObject = response.map((value) => {
     return {
-      name: value.name.common,
+      country: value.name.common,
       population: value.population,
       currency: value.currencies
         ? value.currencies[Object.keys(value.currencies)[0]]?.name
