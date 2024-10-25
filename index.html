@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
-  </head>
 
-  <body>
-    <div class="container"></div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo"><span></span>
+                <h4><a href="#">LOGO</a></h4>
+            </div>
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Gallery</a>
+            </div>
+        </nav>
+        <section>
+            <h1>SEARCH</h1>
+            <label>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, saepe!</p>
+                <input type="text" placeholder="Search..." class="search">
+                <button class="get-country">Get Country</button>
+            </label>
+        </section>
+        <main>
+            <div class="main-content">
+                <div class="flag">
+                    <img src="#" alt="Salies Veleva">
+                </div>
+                <div class="country-info">
+                    <ul>
+                        <li>Population: {11213214}</li>
+                        <li>Currency: {777$}</li>
+                        <li>Capital: {London}</li>
+                        <li>Time: {20:00}</li>
+                        <li>Language: {ENGLISH}</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="api.js"></script>
     <script src="index.js"></script>
-  </body>
+</body>
+
 </html>
